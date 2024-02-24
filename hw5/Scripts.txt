@@ -1,0 +1,15 @@
+1. Написать основные скрипты для автоматизации:
+• Создание проекта с нуля
+django-admin startproject project_name
+Переход к папке
+cd project_name
+ Создание приложения 
+python manage.py startapp app
+• Запуск проекта
+python manage.py runserver
+• Создание виртуального окружения
+python -m venv venv
+Активация виртуального окружения
+venv/Scripts/activate
+• Заморозка зависимостей
+pip install -r requirements.txt

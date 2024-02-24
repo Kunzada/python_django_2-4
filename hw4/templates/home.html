@@ -1,0 +1,42 @@
+
+{% extends 'base.html'%}
+{%load static%}
+{% block content %}
+<h1 class="fw-light pt-5 text-center">Our technologies</h1>
+<div class="content py-5 d-flex p-2">
+
+<div class="card m-3" style="width: 18rem;">
+    <img src="{% static  'img/1.png'%}" class="card-img-top" alt="ios/android">
+    <div class="card-body">
+      <h5 class="card-title">Mobile application</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{% url 'about' %}" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card  m-3" style="width: 18rem;">
+    <img src="{% static 'img/2.png'%}" class="card-img-top" alt="web">
+    <div class="card-body">
+      <h5 class="card-title">Web application</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{% url 'about' %}" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card m-3" style="width: 18rem;">
+    <img src="{% static 'img/3.png'%}" class="card-img-top" alt="desktop">
+    <div class="card-body">
+      <h5 class="card-title">Desktop application</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{% url 'about' %}" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card m-3" style="width: 18rem;">
+    <img src="{%static 'img/4.jpeg'%}" class="card-img-top" alt="game">
+    <div class="card-body">
+      <h5 class="card-title">Game</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{% url 'about' %}" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  
+</div>
+{% endblock %}
